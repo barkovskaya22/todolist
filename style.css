@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;0,900;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #6144e0, #e66d6d);
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 2px;
+    background: whitesmoke;
+}
+
+form button {
+    color: rgb(23, 43, 158);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: rgb(130, 105, 177);
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-container {
+    min-height: 80vh;
+    background: white;
+    width: 70%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(233, 224, 224, 0.644));
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .social ::hover {
+    color: rgb(130, 105, 177);
+  }
+
+  .social ::active {
+    color: rgb(130, 105, 177);;
+  }
+
+  .fab, .fa {
+    color: rgb(130, 105, 177);;
+  }
+
+.todo {
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+
+}
+
+.delete-btn,
+.checked-btn {
+    background: #6144e0;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.checked-btn {
+    background: #df4343;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+fa-check {
+    pointer-events: none;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: rgb(23, 43, 158);;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: rgb(130, 105, 177);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: black;
+}
